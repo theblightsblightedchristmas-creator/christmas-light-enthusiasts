@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="xLights Support Zoom Dashboard">
+  <title>xLights Support • Zoom Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="snow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">✦</div>
+      <div>
+        <div class="brand-title">xLights Support</div>
+        <div class="brand-subtitle">Zoom Support Dashboard</div>
+      </div>
+    </div>
+    <div class="online-badge"><span></span> SUPPORT ONLINE</div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div>
+        <p class="eyebrow">LIGHTING SUPPORT CENTER</p>
+        <h1>Need help with your<br><span>xLights setup?</span></h1>
+        <p class="hero-text">
+          The xLights Support Zoom room is available every day for help with
+          sequences, models, controllers, FPP, networking, pixels, and show setup.
+        </p>
+        <div class="actions">
+          <a id="joinZoom" class="button primary" href="#" target="_blank" rel="noopener">
+            Join Zoom Support ↗
+          </a>
+          <button id="copyMeeting" class="button secondary">Copy Meeting ID</button>
+        </div>
+        <p id="configNotice" class="notice">
+          Add your Zoom link and meeting ID in <code>app.js</code>.
+        </p>
+      </div>
+
+      <div class="clock-panel">
+        <div class="label">PACIFIC TIME</div>
+        <div id="clock" class="clock">--:--:--</div>
+        <div id="date" class="date">Loading date…</div>
+        <div class="timezone">America/Los_Angeles</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card status-card">
+        <div class="card-heading">
+          <h2>Support Status</h2>
+          <span class="pill live"><span></span> ONLINE</span>
+        </div>
+        <div class="big-status">Support is Online</div>
+        <p>
+          The xLights Support Zoom room is available every day.
+          Join whenever you need help.
+        </p>
+        <div class="online-bar">
+          <span></span>
+          <strong>Zoom Support Room Available</strong>
+        </div>
+        <div class="small-row">
+          <span>Availability</span>
+          <strong>Every Day</strong>
+        </div>
+      </article>
+
+      <article class="card room-card">
+        <div class="card-heading">
+          <h2>Zoom Room</h2>
+          <span class="mini-icon">🎥</span>
+        </div>
+        <div class="room-open">ROOM AVAILABLE</div>
+        <p class="muted">
+          Click the button below to open the xLights Support Zoom room.
+        </p>
+        <a id="roomJoin" class="button primary full" href="#" target="_blank" rel="noopener">
+          Open Zoom Room ↗
+        </a>
+      </article>
+
+      <article class="card meeting-card">
+        <div class="card-heading">
+          <h2>Meeting Details</h2>
+          <span class="mini-icon">🔗</span>
+        </div>
+        <div class="meeting-row">
+          <span>Meeting ID</span>
+          <strong id="meetingId">Not configured</strong>
+        </div>
+        <div class="meeting-row">
+          <span>Passcode</span>
+          <strong id="passcode">Not configured</strong>
+        </div>
+        <div class="meeting-row">
+          <span>Room</span>
+          <strong id="roomName">xLights Support</strong>
+        </div>
+      </article>
+    </section>
+
+    <section class="card help-card">
+      <div class="card-heading">
+        <h2>What Can We Help With?</h2>
+        <span class="mini-icon">🎄</span>
+      </div>
+      <div class="help-grid">
+        <div class="help-item"><b>✨ xLights</b><span>Models, layouts, effects & sequences</span></div>
+        <div class="help-item"><b>🎛️ Controllers</b><span>FPP, Falcon, WLED & pixel controllers</span></div>
+        <div class="help-item"><b>🌐 Networking</b><span>IP addresses, E1.31, DDP & network setup</span></div>
+        <div class="help-item"><b>🔌 Hardware</b><span>Power injection, ports, wiring & pixels</span></div>
+        <div class="help-item"><b>🖥️ FPP</b><span>Player setup, playlists & configuration</span></div>
+        <div class="help-item"><b>🎬 Show Setup</b><span>Testing, scheduling & troubleshooting</span></div>
+      </div>
+    </section>
+
+    <section class="card info-card">
+      <div>
+        <p class="eyebrow">BEFORE YOU JOIN</p>
+        <h2>Have your setup ready</h2>
+      </div>
+      <ul>
+        <li>Your xLights version</li>
+        <li>A screenshot/photo of the problem</li>
+        <li>Controller and FPP IP addresses</li>
+        <li>Any error messages or symptoms</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 xLights Support Dashboard</span>
+    <span>Online every day • <span id="footerDate">—</span></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
